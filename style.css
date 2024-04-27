@@ -4,13 +4,6 @@
 body{
     font-family: 'poppins', sans-serif;
 }
-nav{
-    margin: 0px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    position: fixed;
-    width: 100vw;
-    background-color: #fff;
-}
 .redtext{
     color: #ec1e64;
 }
@@ -18,6 +11,13 @@ nav{
 .font-14{
     font-size: 14px;
     
+}
+nav{
+    margin: 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100vw;
+    background-color: #fff;
 }
 
 nav .container .row h3{
@@ -29,6 +29,9 @@ nav .container .row .menu .row{
     display: flex;
     flex-direction: row;
     
+}
+nav .menu a{
+    text-decoration: none;
 }
 nav .container .row a{
     font-size: 14px;
