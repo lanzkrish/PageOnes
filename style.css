@@ -95,6 +95,18 @@ section .container .btn-red-white:hover{
     padding-top: 7rem;
 }
 
+.process .ProcessBoxBorder{
+    border: 3px solid #efefef;
+    padding: 30px;
+    transition: .3s all ease;
+}
+.process .active{
+    border: 3px solid #ec1e64;
+}
+.process .ProcessBoxBorder:hover{
+    border: 3px solid #ec1e64;
+    padding: 30px;
+}
 .services img:hover{
     box-shadow: 14px 14px #ec1e64 ;
     transition: .27s;
