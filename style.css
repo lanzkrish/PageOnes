@@ -4,7 +4,13 @@
 body{
     font-family: 'poppins', sans-serif;
 }
-
+nav{
+    margin: 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100vw;
+    background-color: #fff;
+}
 .redtext{
     color: #ec1e64;
 }
@@ -113,5 +119,12 @@ section .container .btn-red-white:hover{
 }
 @media (max-width: 991.98px) {
     .hero .heading {
-      font-size: 50px; } }
+      font-size: 50px; } 
+      .site-menu{
+        display: none;
+    }
+    nav{
+        border: none;
+    }
 
+    }
