@@ -14,10 +14,12 @@ body{
 }
 nav{
     margin: 0px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.2); */
     position: fixed;
     width: 100vw;
     background-color: #fff;
+    z-index: 4;
+    box-shadow: 0 5px 30px  rgba(23, 23, 23, 0.096);
 }
 
 nav .container .row h3{
