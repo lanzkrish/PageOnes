@@ -52,6 +52,11 @@ section .home h1{
 }
 section .section{
     padding-bottom: 7rem;
+    padding-top: 7rem;
+}
+section .section1{
+    padding-top: 7rem;
+    padding-bottom: 0px;
 }
 .services .container{
     padding-top: 7rem;
@@ -102,9 +107,6 @@ section .container .btn-red-white:hover{
     color: #ec1e64;
 }
 
-.process{
-    padding-top: 7rem;
-}
 
 .process .ProcessBoxBorder{
     border: 3px solid #efefef;
@@ -122,6 +124,51 @@ section .container .btn-red-white:hover{
     box-shadow: 14px 14px #ec1e64 ;
     transition: .27s;
 }
+
+
+section .client{
+    background-color: #1d1d1d;
+    padding-top: 7rem;
+    color: #fff;
+}
+
+section .client .clientBorder .step{
+    background-color: #fff;
+    padding: 30px;
+    color: #252837;
+}
+
+section .client .clientLogo {
+    height: 40px;
+    margin-bottom: 30px;
+}
+section .client  h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+section .feature{
+    background-color: #f8f9fA;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+section .about .officeImage img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
 @media (max-width: 991.98px) {
     .hero .heading {
       font-size: 50px; } 

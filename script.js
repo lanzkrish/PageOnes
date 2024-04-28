@@ -72,3 +72,49 @@ function activateBorder(){
         }
     }
 }
+
+
+
+
+
+const clients=[
+    {
+        clientLogo:'https://preview.colorlib.com/theme/pageone/images/logo-goldline.png.webp',
+        clientName:'Goldline',
+        about:'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.'
+
+    },
+    {
+        clientLogo:'https://preview.colorlib.com/theme/pageone/images/logo-foxhub.png.webp',
+        clientName:'Foxhub',
+        about:'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.'
+
+    },
+    {
+        clientLogo:'https://preview.colorlib.com/theme/pageone/images/logo-ideaa.png.webp',
+        clientName:'Ideaa',
+        about:'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.'
+
+    },
+    {
+        clientLogo:'https://preview.colorlib.com/theme/pageone/images/logo-nirastate.png.webp',
+        clientName:'Nirastate',
+        about:'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.'
+
+    },
+]
+
+
+const clientBox = document.getElementById('clientBox');
+console.log(document.getElementById('clientBox'));
+let clientstr=``;
+for (let i=0 ; i<clients.length;i++){
+    clientstr+=`<div class="col-xs-12 col-sm-6 col-md-6 clientBorder">
+    <div class="step clientBox${i}" id="ProcessBoxBorder${i}">
+      <span class="image " id="clientLogo"><img class="clientLogo" src="${clients[i].clientLogo}" alt="${clients[i].clientName}"></span>
+      <h3 id="clientName" class="redtext">${clients[i].clientName}</h3>
+      <p class="mb-3 font-14" id="clientBoxPara">${clients[i].about} </p>
+    </div>
+  </div>`
+}
+clientBox.innerHTML = clientstr;
