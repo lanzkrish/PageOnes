@@ -149,8 +149,16 @@ section .client  h3 {
 
 section .feature{
     background-color: #f8f9fA;
+    /* display: inline; */
 }
 
+section .feature .flaticon{
+    height: 80px;
+    display: block;
+    margin-bottom: 30px;
+    color: #ec1e64;
+    rotate: -45deg;
+}
 
 
 
