@@ -118,3 +118,54 @@ for (let i=0 ; i<clients.length;i++){
   </div>`
 }
 clientBox.innerHTML = clientstr;
+
+
+
+const features = [
+    {
+        featureLogo:'./assets/png/vector.png',
+        featureName:"illustration",
+        featureDescription:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."
+    },
+    {
+        featureLogo:'./assets/png/chat.png',
+        featureName:"24/7 Support",
+        featureDescription:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."
+    },
+    {
+        featureLogo:'./assets/png/setting.png',
+        featureName:"easy to Use",
+        featureDescription:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."
+    },
+    {
+        featureLogo:'./assets/png/imac.png',
+        featureName:"web development",
+        featureDescription:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."
+    },
+    {
+        featureLogo:'./assets/png/send.png',
+        featureName:"intuitive",
+        featureDescription:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."
+    },
+    {
+        featureLogo:'./assets/png/dictionary.png',
+        featureName:"documentaion",
+        featureDescription:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."
+    },
+]
+
+
+const featureBox = document.getElementById('featureBox');
+console.log(featureBox)
+let featurestr='';
+for (let i=0; i<features.length;i++){
+    featurestr+=`<div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 featureb">
+    <div class="step featureBox " id="fetureBox">
+        <span><img class="flaticon ${features[i].featureName}" src="${features[i].featureLogo}" alt=""></span>
+        <h3 id="FeatureName" class="redtext text-capitalize">${features[i].featureName}</h3>
+        <p class="mb-3 font-14" id="clientBoxPara">${features[i].featureDescription}</p>
+    </div>
+</div>`
+}
+
+featureBox.innerHTML = featurestr;

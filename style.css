@@ -152,14 +152,15 @@ section .feature{
     /* display: inline; */
 }
 
+
 section .feature .flaticon{
     height: 80px;
     display: block;
     margin-bottom: 30px;
-    color: #ec1e64;
+}
+section .feature .illustration{
     rotate: -45deg;
 }
-
 
 
 
@@ -173,6 +174,13 @@ section .feature .flaticon{
 section .about .officeImage img{
     max-width: 100%;
     height: auto;
+}
+/* section .about h3 {
+    font-size: 28px;
+    font-weight: 700;
+} */
+section .about span {
+    margin-bottom: 10px;
 }
 
 
@@ -188,3 +196,14 @@ section .about .officeImage img{
     }
 
     }
+
+
+
+
+footer{
+    font-size: 5px;
+    color: #25283753;
+}
+footer p{
+    font-size: 12px;
+}
